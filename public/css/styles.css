@@ -2573,7 +2573,7 @@ button:focus, input:focus, textarea:focus {
   }
 }
 
-@media (max-width: 365px){
+@media (max-width: 380px){
   .c-text-uppercase.fashion-guide-mobile{
   font-size: 8px;
   }
@@ -4416,7 +4416,7 @@ dom-.is-loaded .c-btn-search.-fixed {
 
 @media (min-width: 1024px) {
   .dom-is-loaded .c-free-shipping_wrap {
-    width: 18.75rem;
+    width: 20.75rem;
   }
 }
 
@@ -4443,10 +4443,10 @@ dom-.is-loaded .c-btn-search.-fixed {
   .c-free-shipping {
     top: 2.1875rem;
     right: 6.875rem;
-    width: 18.75rem;
+    width: 20.75rem;
   }
   .c-free-shipping p {
-    width: 18.75rem;
+    width: 20.75rem;
     font-size: 0.75rem;
   }
 }
@@ -7760,7 +7760,7 @@ footer a:hover img {
 @media (min-width: 514px) and (max-width: 1023px) {
   .c-slider-bg {
     height: 400px;
-    margin-bottom: 0;
+    margin-bottom: 45px;
   }
 }
 
@@ -7854,14 +7854,26 @@ footer a:hover img {
   }
 }
 
-@media (min-width: 1024px) {
-  .c-slider-title {
-    position: absolute;
-  }
+@media (min-width: 1680px){
   .-text-right .c-slider-title {
     right: 100%;
     margin-right: -20rem;
   }
+}
+
+@media (min-width: 1024px) and (max-width: 1679px){
+  .-text-right .c-slider-title {
+    right: 100%;
+    margin-right: -13rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .c-slider-title {
+    position: absolute;
+  }
+
   .-text-right .c-slider-title span {
     -webkit-transform: translate(-100%, 0);
         -ms-transform: translate(-100%, 0);
@@ -7881,7 +7893,7 @@ footer a:hover img {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 1680px){
   .toy-story{
     font-size: 4.625rem;
   }
