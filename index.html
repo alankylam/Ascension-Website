@@ -1,0 +1,1320 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Ascension</title>
+    <meta name="description" content="The Hype Is You">
+    <meta name="author" content="Alan Lam">
+
+    <link rel="stylesheet" href="public/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    jQuery-->
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous">
+    </script>
+<!--    Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="#">
+
+    <script>
+        $(function() {
+            $("body").addClass('dom-is-loaded');
+        });
+    </script>
+
+    <script>
+        $(window).on("load", (function() {
+            $('.loader').fadeOut("slow", function() {
+                // Animation complete
+            });
+        }));
+    </script>
+
+</head>
+
+<body id="ascension" class="template-index">
+
+<div class="c-loading"></div>
+<header class="c-header -align-center">
+
+    <button class="js-toggle-nav c-btn-nav">
+        <div class="c-btn-nav_burger">
+            <span class="c-burger_top"></span>
+            <span class="c-burger_middle"></span>
+            <span class="c-burger_bottom"></span>
+            <div class="c-close-burger_top"></div>
+            <div class="c-close-burger_bottom"></div>
+        </div>
+    </button>
+
+    <button class="c-btn-search js-toggle-search">
+        <div class="c-anim-mask">
+            <div class="c-btn-search_wrap">
+                <div class="c-close-search_wrap">
+                    <div class="c-close-search_top"></div>
+                    <div class="c-close-search_bottom"></div>
+                </div>
+                <img src="public/images/search.svg" alt="search-icon" class="c-btn-search_icon">
+            </div>
+        </div>
+    </button>
+
+    <a href="index.html" class="c-header_logo">
+			<span class="c-header_logo_wrap">
+                <img src="public/images/header-logo.png" class="c-header_logo_image">
+			</span>
+    </a>
+    <div class="c-header_right">
+        <a href="#" class="c-btn-cart">
+            <div class="c-btn-cart_wrap">
+                <img src="public/images/shopping-cart.svg" alt="shopping-cart" class="c-btn-cart_icon">
+                <span>0</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="c-free-shipping">
+        <div class="c-free-shipping_wrap">
+            <p>
+                <strong>Free shipping</strong>
+                <span></span>
+                on all orders over $75*
+            </p>
+        </div>
+    </div>
+</header>
+
+<div class="c-search-overlay">
+    <div class="c-search_wrap">
+        <div class="o-container">
+            <form action="#" class="c-search" onsubmit="return false">
+                <input type="text" placeholder="search here" class="c-search_input js-search-input">
+            </form>
+        </div>
+    </div>
+</div>
+
+<nav class="c-nav">
+    <div class="c-nav_wrap">
+        <div class="js-nav-scrolltop">
+            <div class="c-nav-desktop">
+                <div class="o-container">
+                    <div class="o-grid">
+                        <div class="o-third"></div>
+                        <div class="o-third">
+                            <div class="c-show-nav">
+                                <h3 class="c-text-uppercase">Shop</h3>
+                                <div class="o-grid">
+                                    <div class="o-half">
+                                        <ul class="c-nav-shop">
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Women's Clothing</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Makeup</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Accessories</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Bath + Body</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Fragrance</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="o-half">
+                                        <ul class="c-nav-shop -right">
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Men's Clothing</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Wellness</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Fitness</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Home + Gifts</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Brands</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-third">
+                            <h3 class="c-big-title-menu c-big-title-menu_new">
+                                <a href="#">
+                                    <div class="c-big-title-menu_mask">
+                                        <span>N</span>
+                                        <span>e</span>
+                                        <span>w</span>
+                                    </div>
+                                </a>
+                            </h3>
+
+                            <a href="#" class="c-nav-link-img c-nav-link-apple">
+
+                                <img src="public/images/apple-watch.png" alt="apple-watch" style="height:400px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="o-grid">
+                        <div class="o-third">
+
+                            <a href="#" class="c-nav-link-img c-nav-link-nmd">
+                                <img src="public/images/adidas-NMD.png" alt="nmd">
+                            </a>
+                        </div>
+                        <div class="o-third">
+
+                            <a href="#" class="c-nav-link-img c-nav-link-fog">
+                                <img src="public/images/fog-bomber.png" alt="fog-bomber">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="o-grid c-grid-menu-about">
+                        <div class="o-third">
+                            <h3 class="c-big-title-menu c-big-title-menu_about">
+                                <a href="#">
+                                    <div class="c-big-title-menu_mask">
+                                        <span>A</span>
+                                        <span>b</span>
+                                        <span>o</span>
+                                        <span>u</span>
+                                        <span>t</span>
+                                    </div>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="o-third -align-center"></div>
+
+                        <div class="o-third">
+                            <div class="-align-center c-nav-journal">
+                                <a href="#" class="c-link-display">
+                                    <div class="c-journal-home_wrap_title">
+                                        <h3 class="c-big-title">
+                                            Our Journey
+                                        </h3>
+                                        <p class="c-text-uppercase">Community Updates</p>
+                                    </div>
+                                    <div class="c-btn"><span>Read</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <footer class="c-footer -align-center js-parallax">
+                    <div class="o-container">
+                        <div class="c-footer_logo">
+                            <a href="index.html" class="c-footer_logo_link">
+                                <img src="public/images/Ascension.png" alt="footer-logo">
+                            </a>
+                        </div>
+                        <div class="c-container-mobile">
+                            <div class="o-grid">
+                                <div class="o-third">
+                                    <ul class="c-nav-footer -hidden-mobile">
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Privacy Policy</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Terms & Conditions</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">About</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="o-third">
+                                    <div class="c-footer_social">
+                                        <ul class="c-footer_social_list">
+                                            <li class="c-footer_social_item">
+                                                <a href="#" class="c-follow-us-icon -twitter" target="_blank">
+                                                    <img src="public/images/twitter.svg" class="c-twitter">
+                                                    <span class="c-circle_bg"></span>
+                                                </a>
+                                            </li>
+                                            <li class="c-footer_social_item">
+                                                <a href="#" class="c-follow-us-icon -facebook" target="_blank">
+                                                    <img src="public/images/facebook.svg" class="c-facebook">
+                                                    <span class="c-circle_bg"></span>
+                                                </a>
+                                            </li>
+                                            <li class="c-footer_social_item">
+                                                <a href="#" class="c-follow-us-icon -instagram" target="_blank">
+                                                    <img src="public/images/instagram.svg" class="c-instagram">
+
+                                                    <span class="c-circle_bg"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="c-footer_newsletter">
+                                        <h4 class="c-small-title c-footer_newsletter_title">Weekly newsletter</h4>
+                                        <form action="#" target="_blank" method="post" class="c-form-newsletter">
+
+                                            <input type="email" name="EMAIL" placeholder="name@email.com">
+                                            <div style="position: absolute; left: -5000px;"><input type="text" name="news_form" tabindex="-1" value=""></div>
+                                            <button class="c-btn" title="Subscribe">
+                                                <span>Subscribe</span>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="o-third">
+                                    <ul class="c-nav-footer">
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Shipping info</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Returns / Exchanges</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Contact</a>
+                                        </li>
+
+                                    </ul>
+
+                                    <ul class="c-nav-footer -visible-mobile">
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Privacy Policy</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Terms & Conditions</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">About</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="c-copyright">© Alan Lam 2020</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="c-nav-mobile">
+                <div class="o-container">
+                    <ul class="c-nav-mobile_list">
+                        <li class="c-nav-mobile_item">
+                            <a href="#" class="c-nav-mobile_link">New</a>
+                        </li>
+                        <li class="c-nav-mobile_item">
+
+                            <a href="#" class="c-nav-mobile_link">Staff Picks</a>
+                        </li>
+                        <li class="c-nav-mobile_item">
+                            <a href="#" class="c-nav-mobile_link js-accordion">Shop <span class="c-accordion-icon"></span></a>
+
+                            <div class="c-nav-mobile_dropdown js-accordion-content">
+                                <div class="o-grid">
+                                    <div class="o-half">
+                                        <ul class="c-nav-shop">
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Women's Clothing</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Makeup</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Accessories</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Bath + Body</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Fragrance</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="o-half">
+                                        <ul class="c-nav-shop">
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Men's Clothing</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Wellness</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Mom & Baby</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Home + Gifts</span></a>
+                                            </li>
+
+                                            <li class="c-nav-shop_item">
+                                                <a href="#" class="c-nav-shop_link"><span>Brands</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="c-nav-mobile_item">
+                            <a href="#" class="c-nav-mobile_link">Brands</a>
+                        </li>
+                        <li class="c-nav-mobile_item">
+                            <a href="#" class="c-nav-mobile_link">Our Journey</a>
+                        </li>
+                        <li class="c-nav-mobile_item">
+                            <a href="#" class="c-nav-mobile_link">About</a>
+                        </li>
+                    </ul>
+
+                    <ul class="c-nav-mobile-small_list -visible-mobile">
+
+                        <li class="c-nav-mobile-small_item">
+                            <a href="#" class="c-nav-mobile-small_link"><span>Shipping</span></a>
+                        </li>
+
+                        <li class="c-nav-mobile-small_item">
+                            <a href="#" class="c-nav-mobile-small_link"><span>Returns / Exchange</span></a>
+                        </li>
+
+                        <li class="c-nav-mobile-small_item">
+                            <a href="#" class="c-nav-mobile-small_link"><span>Privacy Policy</span></a>
+                        </li>
+
+                        <li class="c-nav-mobile-small_item">
+                            <a href="#" class="c-nav-mobile-small_link"><span>Terms & Conditions</span></a>
+                        </li>
+
+                        <li class="c-nav-mobile-small_item">
+                            <a href="#" class="c-nav-mobile-small_link"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="barba-wrapper">
+    <div class="barba-container">
+        <div class="c-text-sliding -first js-parallax" data-persist="1">
+            <h1 class="c-huge-title-masked -first-line">
+                <div class="js-parallax" data-speed="17" data-target="#js-letter-parallax" data-horizontal data-position="top">
+                    <div class="-overflow-hidden">
+
+
+                        <span>A</span>
+
+                        <span>s</span>
+
+                        <span>c</span>
+
+                        <span>e</span>
+
+                        <span>n</span>
+
+                        <span>s</span>
+
+                        <span>i</span>
+
+                        <span>o</span>
+
+                        <span>n</span>
+
+                    </div>
+                </div>
+            </h1>
+        </div>
+        <div class="c-text-sliding -second js-parallax" data-persist="1">
+            <h2 class="c-huge-title-masked -second-line">
+                <div class="js-parallax" data-speed="32" data-target="#js-letter-parallax" data-horizontal data-position="top">
+                    <div class="-overflow-hidden">
+
+                        <span>E</span>
+
+                        <span>l</span>
+
+                        <span>e</span>
+
+                        <span>v</span>
+
+                        <span>a</span>
+
+                        <span>t</span>
+
+                        <span>e</span>
+
+                        <span>   </span>
+
+                        <span>Y</span>
+
+                        <span>o</span>
+
+                        <span>u</span>
+
+                        <span>r</span>
+
+                        <span>s</span>
+
+                        <span>e</span>
+
+                        <span>l</span>
+
+                        <span>f</span>
+                    </div>
+                </div>
+            </h2>
+        </div>
+
+
+        <div class="o-scroll -empty" data-module="SmoothScroll" data-scrollbar>
+            <div class="c-empty" id="js-image-home_scroll"></div>
+        </div>
+
+        <div class="c-image-home js-parallax" data-persist="1" id="" data-speed="12" data-position="top" data-target="#js-image-home_scroll">
+            <div class="c-image-home_bg" style="background-image: url(public/images/jay-park-bg.jpg); background-color: #FFFFFF;"></div>
+        </div>
+
+        <div class="c-image-home-mobile">
+            <img src="public/images/jay-park-bg-mobile.jpg" alt="jay-park-bg">
+        </div>
+
+        <div class="o-scroll o-scroll-home" data-module="SmoothScroll" data-scrollbar>
+            <main class="c-main-home">
+                <div id="js-letter-parallax"></div>
+                <div class="c-image-home_text">
+                    <div class="o-container cop-drop">
+                        <div class="o-grid">
+                            <div class="o-third">
+                                <div class="c-btn-picks_wrap">
+                                    <a href="#" class="c-btn-arrow c-btn-picks -white js-toggle-picks-overlay">
+                                        <div class="c-btn-picks_wrap_text">
+                                            <div class="c-element-zindex">
+                                                <strong>Cop or Drop</strong>
+                                                <span class="c-text-uppercase fashion-guide-desktop">Our 2020 Streetwear Fashion Guide</span>
+                                                <span class="c-text-uppercase fashion-guide-mobile">Streetwear Fashion Guide</span>
+                                            </div>
+                                            <img src="public/images/next.svg" class="c-arrow -right -black">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="c-featured-product" id="js-product-parallax">
+                    <div class="o-container">
+                        <div class="o-grid">
+<!--                            First Column-->
+                            <div class="o-third js-parallax" data-speed="1" data-target="#js-product-parallax">
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>Kith Williams II Navy Hoodie</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">KITH</span>
+                                                <span class="c-price">$255.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/Kith-hoodie.png" alt="kith-hoodie" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>Lo-fi Hip-hop Vinyl Figure</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">Youtooz</span>
+                                                <span class="c-price">$75.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/lofi-girl.png" alt="lo-fi girl" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>Gucci Backpack Embroidered Tiger - Black</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">Gucci</span>
+                                                <span class="c-price">$1,395</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/gucci-backpack.png" alt="gucci-backpack" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>ESSENTIALS Sweat Shorts - Black</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">FEAR OF GOD</span>
+                                                <span class="c-price">$156.00</span>
+                                            </p>
+                                            <a href=#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/fog-shorts.png" alt="fog-shorts" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--                            Second Column-->
+                            <div class="o-third js-parallax" data-speed="-1" data-target="#js-product-parallax">
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>Mike Kelley AhhYouth! Skateboard</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">Supreme</span>
+                                                <span class="c-price">$258.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/supreme-skateboard.png" alt="skateboard" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="c-product-item c-product-item_selection">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-text-selection">
+                                            <h2 class="c-product-text-selection_title">
+                                                <i class="icon-selection"></i>
+                                                Hand picked<br>hype items<br> specifically for you
+                                            </h2>
+                                            <a href="#" class="c-btn">
+                                                <span>About</span>
+                                            </a>
+                                        </div>
+                                        <img src="public/images/blank-product.gif" alt="blank" width="400" height="560">
+                                    </div>
+                                </div>
+
+
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>G-Shock x NASA 43mm Watch</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">Casio</span>
+                                                <span class="c-price">$230.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/gshock-nasa.png" alt="nasa-watch" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--                            Third Column -->
+                            <div class="o-third  js-parallax" data-speed="1" data-target="#js-product-parallax">
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>Supreme Nike/NBA Warm-Up Denim Jacket</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">Supreme</span>
+                                                <span class="c-price">$839.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/supreme-nike-jacket.png" alt="nike-jacket" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>MMXX Metal Sunglasses</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">THAMES</span>
+                                                <span class="c-price">$160.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/thames-shades.jpg" alt="thames-shades" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>OFF-WHITE x Nike Women's Running Jacket</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">OFF-WHITE</span>
+                                                <span class="c-price">$296.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/nike-offwhite-jacket.png" alt="offwhite-jacket" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="c-product-item js-product-item">
+                                    <div class="c-scroll-fade-in-block js-parallax">
+                                        <div class="c-product-item_wrap_info">
+                                            <a href="#" class="c-product-item_link"></a>
+                                            <p class="c-product-link_info_category">Staff Picks</p>
+                                            <h2 class="c-product-item_title">
+                                                <div class="c-product-item_title_wrap">
+                                                    <span>KAWS x Sesame Street Cookie Monster Plush</span>
+                                                </div>
+                                            </h2>
+                                            <p class="c-product-link_info_description">
+                                                <span class="c-product-link_info_text">KAWS</span>
+                                                <span class="c-price">$52.00</span>
+                                            </p>
+                                            <a href="#" class="c-btn"><span>Shop</span></a>
+                                        </div>
+                                        <a href="#" class="c-product-item_link_mobile ">
+                                            <img src="public/images/kaws-cookiemonster.png" alt="cookie-monster" width="400" height="560">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<!--                First Product Slider-->
+                <div class="js-parallax" data-speed="1">
+                    <section class="c-brand-home js-parallax c-slider-home" id="js-brand-home">
+                        <div class="o-container c-container-mobile-nopadding">
+                            <div class="c-scroll-fade-in-block js-parallax">
+                                <p class="c-slider-title_brand -visible-mobile"><a href="#" class="c-link-underline">NIKE X NBA</a></p>
+                                <div class="c-slider -text-left js-slider">
+<!--                                    Slide 1 Item 1-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/nike-nba.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <p class="c-slider-title_brand -hidden-mobile">NIKE X NBA</p>
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span>Kyrie Low 3</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    The Nike Kyrie Low 3 first revealed in a relatively simple colorway — the brand preferring to start slow before inching into the athlete’s penchant for loud, bold signatures.
+                                                                    Both sides exhibit this with the same ancient, hieroglyphic approach, though the medial envelops the Swoosh into the same constellation-infused style.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+<!--                                    Slide 1 Item 2-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/nike-nba-2.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <p class="c-slider-title_brand -hidden-mobile"><a href="#">NIKE X NBA</a></p>
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span>Gatorade PG 4</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    The partnership between Paul George's PG 4 signature shoe and the sports drink Gatorade continues as yet another tangy colorway of the silhouette emerges.
+                                                                    This latest iteration has heavy citrus tones, with bright orange and tangerine utilized on the structural bottom as well as the lace lockdown mid-foot, heel pull-tab, and outsole.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+<!--                                    Slide 1 Item 3-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/nike-nba-3.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <p class="c-slider-title_brand -hidden-mobile"><a href="#">NIKE X NBA</a></p>
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span>Lebron 17 Remix</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    LeBron James, with his extensive backing of signatures, often draws on the past for current inspiration.
+                                                                    His LeBron 17, whose look has changed dramatically ever since its debut, has offered not only distinct low-tops but the heavily considered “Graffiti Remix” variant.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+<!--                Second Product Slider-->
+                <section class="c-index-home js-parallax c-slider-home" id="js-index-home">
+                    <div class="o-container c-container-mobile-nopadding">
+                        <div class="c-index-home_wrap">
+                            <div class="c-box-index c-mask js-parallax" data-speed="0.6" data-target="#js-index-home">
+                                <a href="#" class="c-box-index-home">
+                                    <div class="c-box-index_letter">
+                                        <ul class="js-slider-index-letter c-box-index_letter_list">
+
+                                            <li class="c-box-index_letter_item"><span>1</span></li>
+
+                                            <li class="c-box-index_letter_item"><span>2</span></li>
+
+                                            <li class="c-box-index_letter_item"><span>3</span></li>
+
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="c-scroll-fade-in-block js-parallax">
+                                <div class="c-slider -text-right js-slider-index">
+
+
+<!--                                    Slide 2 Item 1-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/toystory-adidas.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span class="toy-story">Toy Story UltraBOOST</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    The Adidas x Toy Story 4 collection is minimalist in aesthetic and will let you rep your favorite characters in a subtle and grownup way.
+                                                                    As the Toy Story branding on the tongue tag completes each design with Three Stripes branding on the plastic cage reinforce the palette.
+                                                                    The collection takes Adidas' iconic Ultraboost 19 silhouettes and gives them a Disney twist.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+<!--                                    Slide 2 Item 2-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/adidas-zeroboost.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span>adizero adios Pro</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    Dubbed the brand’s “fastest ever distance shoe,” adidas has introduced a foray of innovative technology into the design, not only to enhance performance, but to increase comfort too.
+                                                                    Using professional athlete insights, adidas EnergyRods have been inserted into the midsole and consist of five tuned carbon-infused rods allowing runners to maintain their speed for longer.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+<!--                                    Slide 2 Item 3-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/adidas-ozweego.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span>Ozweego</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    Adidas archive-inspired Ozweego silhouette has appeared in many guises, but none have been as loud as the upcoming geometric jungle print pairs.
+                                                                    The “Cloud White/Cloud White/Core Black” pair, which adds plenty of print to the white upper.
+                                                                    3M detailing also appears around the eyestay and near the mid-panels’ overlaying sections.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<!--                Third Product Slide-->
+                <div class="js-parallax" data-speed="1">
+                    <section class="c-brand-home js-parallax c-slider-home" id="js-brand-home">
+                        <div class="o-container c-container-mobile-nopadding">
+                            <div class="c-scroll-fade-in-block js-parallax">
+                                <p class="c-slider-title_brand -visible-mobile"><a href="#" class="c-link-underline">Designer Brands</a></p>
+                                <div class="c-slider -text-left js-slider">
+<!--                                    Slide 3 Item 1-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/viet-jacket.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <p class="c-slider-title_brand -hidden-mobile"><a href="#">Designer Brands</a></p>
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span style="font-size:2.8rem">Tim Lehi & WACKO MARIA</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    Returning for yet another collaboration, Lehi has offered a new set of richly embroidered Vietnam souvenir jackets.
+                                                                    At the upper left chest is an intricately detailed artwork of a tiger’s head with an open mouth and a thick paw resting just below — on the right chest is an image of a green dragon, depicted with a pink underside and yellow horns, amidst thin clouds of smoke.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+<!--                                    Slide 3 Item 2-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/bape-jacket.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <p class="c-slider-title_brand -hidden-mobile"><a href="#">Designer Brands</a></p>
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span>BAPE XXV</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    BAPE has teamed up with Alpha Industries to present an MA-1 and N3-B capsule collection that utilizes the Japanese brand’s iconic motifs.
+                                                                    First showcased on display at BAPE’s 25th-anniversary “BAPE XXV” exhibition in 2018, the two jackets are offered in up the American clothing brand’s iconic Replica Gray, further doused with the former’s iconic camouflage print and more.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+<!--                                    Slide 3 Item 3-->
+                                    <div class="c-slider-item">
+                                        <div class="o-grid">
+                                            <div class="o-three-quarters">
+                                                <a href="#">
+                                                    <div class="c-slider-bg -bg">
+                                                        <div class="o-background" style="background-image: url(public/images/patagonia-jacket.jpg);"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="o-quarter">
+                                                <div class="c-slider-text_wrap -vertical-center">
+                                                    <div class="c-container-mobile">
+                                                        <p class="c-slider-title_brand -hidden-mobile"><a href="#">Designer Brands</a></p>
+                                                        <h3 class="c-slider-title">
+                                                            <a href="#"><span>Sherpa Fleece</span></a>
+                                                        </h3>
+                                                        <div class="c-slider-text">
+                                                            <a href="#">
+                                                                <p>
+                                                                    Patagonia has delivered its latest series of sustainable garments for the season, releasing an “ultrawarm contemporary jacket” that boasts recyclable properties from the inside out.
+                                                                    The jacket features a 1/2” high-pile fleece for a cushy shell and a 700-fill-power insulation that’s made from repurposed duck and goose down materials.
+                                                                </p>
+                                                            </a>
+                                                            <div class="c-slider-text_btn">
+                                                                <a href="#" class="c-btn"><span>View</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <section class="c-journal-home js-parallax" id="js-journal-home">
+                    <div class="o-container">
+                        <div class="o-grid">
+                            <div class="o-third"></div>
+                            <div class="o-third">
+                                <p class="c-text-inspiration js-parallax">
+                                    <span class="c-mask">Weekly inspirations</span>
+                                </p>
+                            </div>
+                            <div class="o-third"></div>
+                        </div>
+                        <div class="o-grid">
+                            <div class="o-third"></div>
+                            <div class="o-third">
+                                <a href="#">
+                                    <div class="c-journal-img_wrap">
+                                        <div class="c-journal-img_mask js-parallax">
+                                            <div class="c-scroll-fade-in-block js-parallax">
+                                                <div class="-parallax-img">
+                                                    <img src="public/images/lee-hyori-mc.png" alt="lee-hyori" class="js-parallax" data-speed="0.4" data-target="#js-journal-home">
+                                                </div>
+                                            </div>
+                                            <h3 class="c-huge-title c-journal-title -first-line js-parallax c-mask" data-speed="-2" data-target="#js-journal-home" data-horizontal>Elevating</h3>
+                                            <h3 class="c-huge-title c-journal-title -second-line js-parallax c-mask" data-speed="2" data-target="#js-journal-home" data-horizontal>Style</h3>
+                                        </div>
+                                        <h3 class="c-huge-title c-journal-title -first-line js-parallax c-mask" data-speed="-2" data-target="#js-journal-home" data-horizontal>Elevating</h3>
+                                        <h3 class="c-huge-title c-journal-title -second-line js-parallax c-mask" data-speed="2" data-target="#js-journal-home" data-horizontal>Style</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="o-third c-btn-read-wrap">
+                                <a href="#" class="c-btn c-mask">
+                                    <span>Read our blog</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+
+            <div class="c-footer-wrap">
+                <footer class="c-footer -align-center js-parallax">
+                    <div class="o-container">
+                        <div class="c-footer_logo">
+                            <a href="index.html" class="c-footer_logo_link">
+                                <img src="public/images/Ascension.png" alt="footer-logo">
+                            </a>
+                        </div>
+                        <div class="c-container-mobile">
+
+                            <div class="o-grid">
+                                <div class="o-third">
+                                    <ul class="c-nav-footer -hidden-mobile">
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Privacy Policy</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Terms & Conditions</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">About</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="o-third">
+                                    <div class="c-footer_social">
+                                        <ul class="c-footer_social_list">
+                                            <li class="c-footer_social_item">
+                                                <a href="#" class="c-follow-us-icon -twitter" target="_blank">
+                                                    <img src="public/images/twitter.svg" class="c-twitter">
+                                                    <span class="c-circle_bg"></span>
+                                                </a>
+                                            </li>
+                                            <li class="c-footer_social_item">
+                                                <a href="#" class="c-follow-us-icon -facebook" target="_blank">
+                                                    <img src="public/images/facebook.svg" class="c-facebook">
+                                                    <span class="c-circle_bg"></span>
+                                                </a>
+                                            </li>
+                                            <li class="c-footer_social_item">
+                                                <a href="#" class="c-follow-us-icon -instagram" target="_blank">
+                                                    <img src="public/images/instagram.svg" class="c-instagram">
+                                                    <span class="c-circle_bg"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="c-footer_newsletter">
+                                        <h4 class="c-small-title c-footer_newsletter_title">Weekly newsletter</h4>
+                                        <form action="#" target="_blank" method="post" class="c-form-newsletter">
+
+                                            <input type="email" name="EMAIL" placeholder="name@email.com">
+                                            <div style="position: absolute; left: -5000px;"><input type="text" name="#" tabindex="-1" value=""></div>
+                                            <button class="c-btn" title="Subscribe">
+                                                <span>Subscribe</span>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="o-third">
+                                    <ul class="c-nav-footer">
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Shipping info</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Returns / Exchanges</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Contact</a>
+                                        </li>
+
+
+                                    </ul>
+                                    <ul class="c-nav-footer -visible-mobile">
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Privacy Policy</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">Terms & Conditions</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="c-nav-footer_link">About</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="c-copyright">© Alan Lam 2020</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
